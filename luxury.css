@@ -1,0 +1,513 @@
+/* GLOBAL RESET */
+
+body{
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#F8F6F2;
+color:#222;
+}
+
+section{
+padding:80px 100px;
+}
+
+h1,h2,h3{
+margin-bottom:20px;
+}
+
+.sectionTitle{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+}
+
+body{
+margin:0;
+font-family:Poppins;
+background:#F8F6F2;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.7);
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.logo span{
+color:#D4AF37;
+font-weight:500;
+}
+
+.navLinks{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.navLinks li a{
+text-decoration:none;
+color:white;
+font-size:15px;
+position:relative;
+transition:0.3s;
+}
+
+/* underline animation */
+.navLinks li a::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background:#D4AF37;
+left:0;
+bottom:-5px;
+transition:0.3s;
+}
+
+.navLinks li a:hover::after{
+width:100%;
+}
+
+.navAuth{
+display:flex;
+gap:10px;
+}
+
+.loginBtn{
+color:white;
+text-decoration:none;
+}
+
+.signupBtn{
+background:#D4AF37;
+color:black;
+padding:6px 12px;
+border-radius:5px;
+text-decoration:none;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1551882547-ff40c63fe5fa") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.heroOverlay {
+  background: rgba(0,0,0,0.65);
+  padding: 60px 80px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(8px);
+}
+
+.heroTitle {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.heroTag {
+  font-size: 24px;
+  margin: 15px 0 25px;
+  color: #D4AF37;
+  font-weight: 500;
+}
+
+.heroButton {
+  background: linear-gradient(135deg,#D4AF37,#b89655);
+  color: black;
+  padding: 14px 35px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.heroButton:hover {
+  transform: scale(1.05);
+}
+
+/* BUTTON */
+
+.goldBtn{
+background:#C6A769;
+border:none;
+padding:14px 35px;
+font-size:16px;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.goldBtn:hover{
+background:#b89655;
+}
+
+/* FOOTER */
+
+footer{
+background:#0F172A;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* ROOMS SECTION */
+
+.roomsSection{
+padding:80px 100px;
+background:#F8F6F2;
+text-align:center;
+}
+
+.sectionTitle{
+font-family:"Playfair Display";
+font-size:40px;
+margin-bottom:50px;
+}
+
+.roomsGrid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.roomCard{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.roomCard:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.roomCard img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.roomInfo{
+padding:20px;
+}
+
+.roomInfo h3{
+font-family:"Playfair Display";
+margin-bottom:10px;
+}
+
+.viewRoomsBtn{
+margin-top:40px;
+}
+
+/* AMENITIES */
+
+.amenitiesSection{
+padding:80px 100px;
+background:white;
+text-align:center;
+}
+
+.amenitiesGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+margin-top:40px;
+}
+
+.amenityCard{
+background:#F8F6F2;
+padding:40px 25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.amenityCard:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.amenityIcon{
+font-size:40px;
+color:#C6A769;
+margin-bottom:15px;
+}
+
+.amenityCard h3{
+font-family:"Playfair Display";
+margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.gallerySection{
+padding:80px 100px;
+background:#F8F6F2;
+text-align:center;
+}
+
+.galleryGrid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.galleryGrid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+transition:0.3s;
+}
+
+.galleryGrid img:hover{
+transform:scale(1.05);
+}
+
+/* TESTIMONIALS */
+
+.testimonialSection{
+padding:80px 100px;
+background:white;
+text-align:center;
+}
+
+.testimonialGrid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:40px;
+}
+
+.testimonialCard{
+background:#F8F6F2;
+padding:35px;
+border-radius:10px;
+font-style:italic;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.testimonialCard h4{
+margin-top:15px;
+font-style:normal;
+font-weight:500;
+}
+
+/* BOOKING */
+
+.bookingSection{
+padding:80px 100px;
+background:#F8F6F2;
+text-align:center;
+}
+
+.bookingForm{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.bookingForm input,
+.bookingForm select{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:15px;
+}
+
+.reachGrid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.reachCard{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.menuGrid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.menuCard{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menuCard img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.menuCard h3{
+padding:10px;
+}
+
+.menuCard p{
+padding:0 10px 15px;
+}
+
+/* PAGE CONTAINER FIX */
+
+.homePage,
+.roomsPage,
+.amenitiesPage,
+.restaurantPage,
+.galleryPage,
+.bookingPage,
+.contactPage,
+.authPage {
+  padding: 80px 100px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+  .homePage,
+  .roomsPage,
+  .amenitiesPage,
+  .restaurantPage,
+  .galleryPage,
+  .bookingPage,
+  .contactPage,
+  .authPage {
+    padding: 40px 20px;
+  }
+}
+
+.chatbotBox {
+  margin-top: 30px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.amenityCard {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.amenityCard img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.amenityCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* AUTH PAGES */
+
+.authPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.authBox {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.authBox input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+body {
+  background: linear-gradient(to bottom, #F8F6F2, #EFE9DF);
+}
+
+/* CHEF SPECIAL SECTION */
+
+.chefGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.chefCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.chefCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.chefCard h3 {
+  padding: 15px 10px 5px;
+  font-family: "Playfair Display";
+}
+
+.chefCard p {
+  padding: 0 15px 20px;
+  color: #555;
+}
+
+.chefCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.chefCard {
+  background: linear-gradient(to bottom, #ffffff, #f8f6f2);
+}
